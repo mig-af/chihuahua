@@ -54,7 +54,7 @@ watchdog.exe
 Requiere tener [Go1.25.4](https://go.dev/dl/) instalado.
 
 ```bash
-git clone https://github.com/mig-af/watchdog.git
+git clone https://github.com/mig-af/chihuahua.git
 cd watchdog
 go run main.go
 ```
