@@ -49,15 +49,14 @@ watchdog.exe
 
 ---
 
-### Opción 2 — Compilar desde el código fuente
+### Opción 2 — Usar desde el código fuente
 
 Requiere tener [Go1.25.4](https://go.dev/dl/) instalado.
 
 ```bash
 git clone https://github.com/mig-af/watchdog.git
 cd watchdog
-go build -o watchdog (si se quiere compilar)
-go run main.go (si se quiere ejecutar directamente sin compilacion)
+go run main.go
 ```
 
 
@@ -131,13 +130,13 @@ El programa inicia el monitoreo, muestra en pantalla los archivos detectados y l
 ## Compilar para otros sistemas
 
 ```bash
-# Para Windows
+# Windows
 GOOS=windows GOARCH=amd64 go build -o builds/watchdog.exe
 
-# Para Linux
+# Linux
 GOOS=linux GOARCH=amd64 go build -o builds/watchdog-linux
 
-# Para Android (Termux)
+# Android (Termux)
 GOOS=android GOARCH=arm64 go build -o builds/watchdog-termux
 ```
 
